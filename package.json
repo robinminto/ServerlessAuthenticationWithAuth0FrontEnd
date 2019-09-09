@@ -48,5 +48,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://localhost:3001"
+  "proxy": "https://srvrlss-auth-auth0.azurewebsites.net"
 }

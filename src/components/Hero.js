@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "reactstrap";
 import Highlight from "../components/Highlight";
 import { useAuth0 } from "../react-auth0-spa";
@@ -87,6 +87,12 @@ const Hero = () => {
     }
   };
 
+  useEffect(() => {
+    if (isAuthenticated) {
+      setGreeting("Hello " + user.nickname);
+    }  
+  }, []);
+  
   return (
     <>
       <div className="text-center hero my-5">

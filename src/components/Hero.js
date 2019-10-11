@@ -91,7 +91,7 @@ const Hero = () => {
     if (isAuthenticated) {
       setGreeting("Hello " + user.nickname);
     }  
-  }, [isAuthenticated, user.nickname]);
+  }, [isAuthenticated, user]);
   
   return (
     <>
